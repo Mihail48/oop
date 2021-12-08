@@ -55,14 +55,14 @@ class QueryBuilder{
 
 
 
-$db = new QueryBuilder($pdo);
+//$db = new QueryBuilder($pdo);
 
-$result = $db->SelectALL('posts');
+//$result = $db->SelectALL('posts');
 
-$getOne = $db->SelectOne('posts',4);
+//$getOne = $db->SelectOne('posts',4);
 
 //$db->create('posts','title','dsfdsfdsf')
-$db->delete('posts',8);
+//$db->delete('posts',8);
 
 
 
