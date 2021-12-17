@@ -1,6 +1,5 @@
 <?php
 $pdo = new PDO("mysql:host=localhost;dbname=oop","root","");
-function dd($name){var_dump($name);die;}
 
 
 class QueryBuilder{
@@ -54,15 +53,20 @@ class QueryBuilder{
 }
 
 
+//$QB = new QueryBuilder($pdo); // создаем новый объект класса. $pdo - подключение к базе данных, $QB - экземпляр класса
 
-//$db = new QueryBuilder($pdo);
-
-//$result = $db->SelectALL('posts');
-
-//$getOne = $db->SelectOne('posts',4);
-
-//$db->create('posts','title','dsfdsfdsf')
-//$db->delete('posts',8);
+//$QB->SelectALL($table); // выбирает все значения из таблицы
+//$QB->SelectOne($table, $id); // выбирает одну строку из таблицы
+//$QB->create($table, $colums, $data); // создает новую запись в таблице
+//$QB->update($table, $colums, $data, $id); // редактирует указанную запись в таблице
+//$QB->delete($table,$id); // удаляет указанную запись в таблице
+//	string $table - имя таблицы, string $colums - имя столбца,string||int $data - информация которая вносится в базу данных, int $id - номер записи
+//
+//
+//
+//
+//
+//
 
 
 
